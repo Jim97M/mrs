@@ -5,6 +5,8 @@ import com.projects.management.services.ManagerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @CrossOrigin( origins = "http://localhost:3010/")
 @RestController
 @RequestMapping("/api/v1/")
@@ -19,5 +21,10 @@ public class ManagerController {
     @PostMapping("manager")
     public Manager createManager(@RequestBody Manager manager){
        return managerService.createManager(manager);
+    }
+
+    @GetMapping("manager")
+    public List<Manager> getManagers(){
+        return managerService.getAllManagers();
     }
 }
