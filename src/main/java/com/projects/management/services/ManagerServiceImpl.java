@@ -38,7 +38,7 @@ public class ManagerServiceImpl implements ManagerService {
                 mng.getLastName(),
                 mng.getEmailId()
         )).collect(Collectors.toList());
-        return null;
+        return managers;
     }
 
     @Override
