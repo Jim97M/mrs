@@ -1,21 +1,19 @@
 package com.projects.management.services;
-import com.projects.management.entity.ManagerEntity;
-import com.projects.management.model.Manager;
 import com.projects.management.model.Student;
 import com.projects.management.entity.StudentEntity;
 
 import com.projects.management.repository.StudentRepository;
 import org.springframework.beans.BeanUtils;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.stream.Collectors;
-
+@Service
 public class StudentServiceImpl implements StudentService {
 
     StudentRepository studentRepository;
 
     public StudentServiceImpl(StudentRepository studentRepository){this.studentRepository = studentRepository;}
-
 
     @Override
     public Student createStudent(Student student) {
