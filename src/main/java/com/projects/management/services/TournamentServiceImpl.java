@@ -3,10 +3,11 @@ import com.projects.management.repository.TournamentRepository;
 import com.projects.management.model.Tournament;
 import com.projects.management.entity.TournamentEntity;
 import org.springframework.beans.BeanUtils;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.stream.Collectors;
-
+@Service
 public class TournamentServiceImpl implements TournamentService {
 
     TournamentRepository tournamentRepository;

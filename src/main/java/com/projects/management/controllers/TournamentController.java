@@ -17,10 +17,10 @@ public class TournamentController {
 
     public TournamentController(TournamentService tournamentService){this.tournamentService = tournamentService;};
 
-    @PostMapping("club")
+    @PostMapping("tournament")
     public Tournament createTournament(@RequestBody Tournament tournament){return tournamentService.createTournament(tournament);};
 
-    @GetMapping("club")
+    @GetMapping("tournament")
     public List<Tournament> getTournaments(){
       return tournamentService.getAllTournament();
     }
