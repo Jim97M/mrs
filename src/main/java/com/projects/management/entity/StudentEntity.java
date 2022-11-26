@@ -8,7 +8,7 @@ import javax.persistence.*;
 public class StudentEntity {
    @Id
    @GeneratedValue(strategy = GenerationType.IDENTITY)
-   private Long id;
+   private long id;
     private String studentName;
     private String admNo;
 

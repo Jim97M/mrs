@@ -7,7 +7,7 @@ import javax.persistence.*;
 public class TournamentEntity {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
-  private Long id;
+  private long id;
   private String name;
   private String description;
 }
